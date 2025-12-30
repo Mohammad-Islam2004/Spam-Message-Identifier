@@ -2,10 +2,18 @@ import streamlit as st
 import pickle
 import string
 import nltk
-import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+import os
+
+# Create a local nltk_data directory
+NLTK_DATA_DIR = os.path.join(os.getcwd(), "nltk_data")
+os.makedirs(NLTK_DATA_DIR, exist_ok=True)
+
+nltk.data.path.append(NLTK_DATA_DIR)
+
+nltk.download('punkt', download_dir=NLTK_DATA_DIR)
+nltk.download('punkt_tab', download_dir=NLTK_DATA_DIR)
+nltk.download('stopwords', download_dir=NLTK_DATA_DIR)
+
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
