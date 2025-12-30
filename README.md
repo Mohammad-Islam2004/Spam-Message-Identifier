@@ -5,7 +5,7 @@ The project is built with **Python**, **NLTK**, and **Streamlit** for an interac
 
 ---
 
-## 🚀 Features
+## 🚀 Usage
 
 - Classifies SMS/email text as **Spam** or **Not Spam**
 - Text preprocessing using NLP techniques
@@ -14,6 +14,9 @@ The project is built with **Python**, **NLTK**, and **Streamlit** for an interac
 - Lightweight and easy to deploy
 
 ---
+
+## 🔗 Click the link below to see live preview:
+https://spam-message-identifier-ffzmaxgr7fqriqfs4vnykp.streamlit.app/
 
 ## 🛠️ Technologies Used
 
